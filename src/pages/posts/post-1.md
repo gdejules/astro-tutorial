@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Astro Blog Post'
 pubDate: 2026-04-18
 description: 'This is my first writing of my web development journey using Astro!'
@@ -8,10 +9,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public", "building in public"]
 ---
-# My First Astro Blog Post
-
-Published on: 2026-04-18
-
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
 ## What I've accomplished
