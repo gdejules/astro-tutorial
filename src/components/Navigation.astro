@@ -1,5 +1,21 @@
 ---
+const navBackground = "plum";
+const navColor = "white";
+const fontWeight = "bold";
+const textCase = "uppercase"; 
 ---
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<style define:vars={{navBackground, navColor, fontWeight, textCase}}>
+    div {
+        color: var(--navColor);
+        background-color: var(--navBackground);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+        max-widthth: 100%;
+        padding: 8px 16px;
+    }
+</style>
+<div>
+  <a href="/">Home</a>
+  <a href="/about/">About</a>
+  <a href="/blog/">Blog</a>
+</div>
