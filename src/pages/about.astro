@@ -1,5 +1,13 @@
 ---
 const pageTitle = "About Me";
+
+const identity = {
+  firstName: "Juliartha",
+  country: "Indonesia",
+  occupation: "Creative Web Developer", hobbies: ["sketching", "photography", "tennis"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs", "Figma", "Wireframing", "HiFi Design", "Prototyping"];
 ---
 <html lang="en">
   <head>
@@ -18,5 +26,17 @@ const pageTitle = "About Me";
     <h2>My first live website experiment</h2>
     <p>I am working thorugh Astro introductory tutorial. This is my second page in the website.</p>
     <p>This site will be updated as I learn through the tutorial. Wish me luck!</p>
+    <p>Here are a few facts about me:</p>
+    <ul>
+      <li>My name is {identity.firstName}.</li>
+      <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+      {identity.hobbies.length >= 2 &&
+        <li>Two of my hobbies are: {identity.hobbies[1]} and {identity.hobbies[2]}</li>
+      }
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+      {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
   </body>
 </html>
