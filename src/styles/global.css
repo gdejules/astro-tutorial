@@ -20,24 +20,6 @@ h1 {
   font-size: 2.5rem;
 }
 
-.tag-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tags {
-  display: inline-flex;
-  background-color: plum;
-  color: purple;
-  padding: 6px 12px;
-  border-radius: 16px;
-  font-size: 14px;
-}
-
 /* nav styles */
 .menu {
   background-color: #0d0950;
@@ -90,5 +72,13 @@ h1 {
 
   .menu {
     display: none;
+  }
+
+  .card {
+    flex-direction: row; 
+    max-width: 800px;
+  }
+  .image-container img {
+    width: 40%; /* Image takes 40% of width in horizontal mode */
   }
 }
